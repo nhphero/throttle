@@ -13,7 +13,7 @@ declare(strict_types=1);
 namespace NhpHero\Throttle;
 
 
-use Throttle\interfaces\ThrottleStore;
+use Throttle\Interfaces\ThrottleStore;
 
 /**
  * @author Phuong Nguyen <nhphero@gmail.com>
