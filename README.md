@@ -1,4 +1,4 @@
-# PHP Throttle
+# Simple PHP Throttle
 
 This is yet another Throttling library for PHP applications, that provides a throttling interface and a flexible API for implementing custom throttling algorithms (aka providers) and storage strategies.
 
@@ -25,7 +25,7 @@ $throttle = new NhpHero\Throttle\Throttle($storage);
 $limit = 10;
 $time= 60;
 $throttleKey = $_SERVER['REMOTE_ADDR'];
-if ($throttle->attempt($throttleKey, $this->limit, $this->period)) {
+if ($throttle->attempt($throttleKey, $limit, $time)) {
     // allow
 } else {
     // deny
