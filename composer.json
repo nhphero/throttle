@@ -1,6 +1,6 @@
 {
     "name": "nhphero/throttle",
-    "description": "A PHP package for throttling and rate limiting",
+    "description": "A Simple PHP package for throttling and rate limiting",
     "type": "library",
     "license": "MIT",
 	"authors": [
