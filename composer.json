@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "predis/predis": "*",
+        "predis/predis": "*"
     },
     "autoload": {
         "psr-4": {
