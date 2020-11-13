@@ -1,0 +1,21 @@
+{
+    "name": "nhphero/throttle",
+    "description": "A PHP package for throttling and rate limiting",
+    "type": "library",
+    "license": "MIT",
+	"authors": [
+        {
+            "name": "Phuong Nguyen",
+            "email": "nhphero@gmail.com"
+        }
+    ],
+    "require": {
+        "predis/predis": "*",
+    },
+    "autoload": {
+        "psr-4": {
+            "NhpHero\\Throttle\\": "src/"
+        }
+    }
+	 "minimum-stability": "stable"
+}
