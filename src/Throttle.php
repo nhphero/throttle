@@ -13,7 +13,6 @@ declare(strict_types=1);
 namespace NhpHero\Throttle;
 
 
-
 use NhpHero\Throttle\Interfaces\ThrottleStore;
 
 /**
@@ -51,6 +50,10 @@ class Throttle
     public function attempt(string $key, int $limit, int $time)
     {
         $response = $this->check($key, $limit, $time);
+
+        if (!$response) {
+            $this->number = null;
+        }
 
         $this->hit($key, $time);
 
